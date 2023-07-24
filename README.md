@@ -1,38 +1,20 @@
-# create-svelte
+# Data ProspeX web site
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Esse é o web site da Data ProspeX, as páginas existentes e que já foram começadas a construção são:
 
-## Creating a project
+## Home
+A página home serve como carta de apresentação do produto que a Data ProspeX
+oferece e também como landing page onde os usuarios interessados podem colocar suas informações
+para entrarmos em contato. A ideia dessa página é apresentar um problema, uma solução e um caminho para chegar
+a essa solução.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Projetos
+A página de projetos vai contar sobre os projetos que já desenvolvemos e quais problemas eles resolveram.
+Vai citar alguns projetos que já realizamos para outras empresas sem dar muitos detalhes mas tentando enfatizar
+os números que conseguimos com a solução.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Data Garden
+A página Data Garden vai ser um blog onde vai ter posts e artigos sobre tecnologia voltados a dados,
+essa era uma vontade inicial antes mesmo da Data ProspeX mas casa bem. Educar os usuarios com novas informações
+mostra que sabemos oque estamos fazendo e mostra também comprometimento. Tentaremos postar artigos semanais sobre os mais
+diversos assuntos de tecnologias mas claro, reafirmando, sobre dados.
