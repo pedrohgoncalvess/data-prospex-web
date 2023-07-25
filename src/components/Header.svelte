@@ -85,6 +85,14 @@
         display: none;
     }
 
+    .nav-item a {
+        color: var(--font_primary);
+        font-size: 25px;
+    }
+
+
+    /*ENTER MESSAGES*/
+
     .enter-messages {
         display: flex;
         flex-direction: column;
@@ -95,12 +103,6 @@
         margin-top: 3%;
     }
 
-    .nav-item a {
-        color: var(--font_primary);
-        font-size: 25px;
-    }
-
-    /*BUTTONS*/
 
     .buttons-redirect {
         display: flex;
@@ -163,7 +165,6 @@
 
     .contact-button:hover > .arrow {
         transform: rotate(-45deg) translate(4px, 4px);
-        border-color: text-hover-color;
     }
 
     .contact-button:hover > .arrow::before {
@@ -178,6 +179,13 @@
 
 
     @media(min-width: 1080px) {
+
+        .enter-messages {
+            display: flex;
+            justify-content: center;
+            margin: 15% auto;
+            width: 60%;
+        }
 
         .nav-icon {
             display: none;
