@@ -1,6 +1,7 @@
 <script lang="ts">
-    import PhoneNumber from "./PhoneNumber.svelte";
     import MaskInput from "svelte-input-mask";
+    import {displayPopUp} from "./stores/displaySitu.js";
+
 
     let name:string = '';
     let email:string = '';
@@ -15,13 +16,20 @@
     }
 
 
-    function toTheSubmit(event) {
-        console.log(event.data)
-        console.log(name)
-        console.log(email)
-        console.log(phoneNumber)
-        console.log(segment)
-        console.log(message)
+    function toTheSubmit() {
+        if (phoneNumber.includes("*") || (phoneNumber.length === 0)) {
+            console.log(phoneNumber)
+            console.log("Preencha corretamente o número de telefone.")
+        }
+        if (name.length === 0) {
+            //console.log("Preencha corretamente o nome.")
+        }
+        if (email.length === 0) {
+            //console.log("Preencha corretamente o e-mail.")
+        }
+        else {
+            displayPopUp.set(true)
+        }
     }
 
 </script>
@@ -31,13 +39,13 @@
 
     <form class="inputs" on:submit|preventDefault={toTheSubmit}>
         <label>Nome<span class="required">*</span></label>
-        <input type="text" bind:value={name}  placeholder="Como devemos chamar você?" class="name-field" required>
+        <input type="text" bind:value={name}  placeholder="Como devemos chamar você?" class="name-field">
 
         <label>Telefone<span class="required">*</span></label>
-        <MaskInput class="number-field" on:change={maskInput} alwaysShowMask maskChar="*" {mask} required />
+        <MaskInput class="number-field" on:change={maskInput} alwaysShowMask maskChar="*" {mask} />
 
         <label>E-mail<span class="required">*</span></label>
-        <input type="email" bind:value={email} placeholder="example@email.com" class="email-field" required>
+        <input type="email" bind:value={email} placeholder="example@email.com" class="email-field">
 
         <label>Segmento da empresa</label>
         <input type="text" bind:value={segment} class="segment-field" placeholder="Ex: Contabilidade">
