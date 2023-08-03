@@ -130,7 +130,7 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
         display: flex;
         justify-content: center;
         margin: 2% auto;
-        color: white;
+        color: var(--font_primary);
         width: 80%;
     }
 

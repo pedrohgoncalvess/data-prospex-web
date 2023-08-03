@@ -52,12 +52,12 @@
     }
 
     .form h2 {
-        color: white;
+        color: var(--font_primary);
         margin: 10% auto 6% 6% ;
     }
 
     :global(::placeholder) {
-        color: white;
+        color: var(--font_primary);
     }
 
     .inputs {
@@ -69,13 +69,13 @@
     .inputs input {
         width: 95%;
         height: 35px;
-        border-bottom-color: white;
+        border-bottom-color: var(--font_primary);
         border-top: none;
         border-left: none;
         border-right: none;
         margin-bottom: 8%;
         background-color: transparent;
-        color: white;
+        color: var(--font_primary);
     }
 
     .inputs input:hover {
@@ -86,13 +86,13 @@
     :global(.number-field) {
         width: 95%;
         height: 35px;
-        border-bottom-color: white;
+        border-bottom-color: var(--font_primary);
         border-top: none;
         border-left: none;
         border-right: none;
         margin-bottom: 10%;
         background-color: transparent;
-        color: white;
+        color: var(--font_primary);
     }
 
     :global(.number-field:hover) {
@@ -101,18 +101,18 @@
     }
 
     label {
-        color: white;
+        color: var(--font_primary);
     }
 
     .message-input {
-        border-bottom-color: white;
+        border-bottom-color: var(--font_primary);
         border-top: none;
         border-left: none;
         border-right: none;
         word-wrap: break-word;
         word-break: break-all;
         background-color: transparent;
-        color:white;
+        color:var(--font_primary);
         font-weight: bold;
         margin-top: 3%;
     }
@@ -128,14 +128,14 @@
         width: 160px;
         height: 45px;
         margin: 10% auto;
-        color: white;
+        color: var(--font_primary);
         font-size: 15px;
         font-weight: bold;
     }
 
     .submit-form:hover {
-        background-color: #009887;
-        transition: all .3s ease;
+        background-color: #009830;
+        transition: all 0.5s ease;
     }
 
     @media(min-width: 850px) {

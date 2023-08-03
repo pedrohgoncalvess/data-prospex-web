@@ -74,7 +74,7 @@
     .title-services {
         justify-content: space-around;
         margin: 3% 5% 3% 10%;
-        color: #f6f6f6;
+        color: var(--font_primary);
         font-size: 20px;
     }
 
@@ -87,7 +87,7 @@
 
     .principal-service {
         text-align: center;
-        background-color: #c9c8c8;
+        background-color: var(--background_service);
         opacity: 0.6;
         border-radius: 10px;
         margin: 4% auto;
@@ -110,7 +110,7 @@
     .title-other-services {
         justify-content: space-around;
         margin: 7% 0 0 10%;
-        color: #f6f6f6;
+        color: var(--font_primary);
         font-size: 20px;
     }
 
@@ -124,7 +124,7 @@
 
     .secondary-service {
         text-align: center;
-        background-color: #c9c8c8;
+        background-color: var(--background_service);
         opacity: 0.6;
         border-radius: 10px;
         margin: 4% auto;
@@ -172,7 +172,7 @@
             flex:1;
             text-align: center;
             align-items: center;
-            background-color: #c9c8c8;
+            background-color: var(--background_service);
             opacity: 0.6;
             border-radius: 10px;
         }

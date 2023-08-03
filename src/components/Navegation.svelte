@@ -34,12 +34,6 @@
 </nav>
 
 <style>
-    :root {
-        --font_primary:white;
-        --font_secondary: #01ace8;
-        --font_third: #02b0f5;
-        --italic-font: #c4c4c4;
-    }
 
     .nav-container {
         display: flex;

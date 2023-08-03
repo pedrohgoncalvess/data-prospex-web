@@ -29,13 +29,6 @@
 
 <style>
 
-    :root {
-        --font_primary:white;
-        --font_secondary: #01ace8;
-        --font_third: #02b0f5;
-        --italic-font: #c4c4c4;
-    }
-
 
     .enter-messages {
         display: flex;
@@ -43,7 +36,7 @@
         justify-content: left;
         text-align: left;
         color: var(--font_primary);
-        margin-left: 15%;
+        margin-left: 10%;
         margin-top: 3%;
     }
 
