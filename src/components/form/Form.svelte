@@ -2,7 +2,7 @@
     import PhoneNumber from "./PhoneNumber.svelte";
 
     let name:string = '';
-    let phoneNumber:string = '';
+    let phoneNumber;
     let email:string = '';
     let segment:string = '';
     let message:string = '';
@@ -36,7 +36,7 @@
         <label>Fale sobre seu problema e/ou ideia</label>
         <textarea rows="3" cols="33" bind:value={message} class="message-input" placeholder="Descreva um problema/ideia ou cite alguma solução que trabalhamos."></textarea>
 
-        <button type="submit" class="submit-form">Entrar em contato</button>
+        <button id="contact" type="submit" class="submit-form">Entrar em contato</button>
     </form>
 </div>
 <style>
@@ -53,7 +53,7 @@
 
     .form h2 {
         color: white;
-        margin: 1% auto 6% 3% ;
+        margin: 10% auto 6% 6% ;
     }
 
     :global(::placeholder) {
@@ -114,6 +114,7 @@
         background-color: transparent;
         color:white;
         font-weight: bold;
+        margin-top: 3%;
     }
 
     .required {
@@ -130,6 +131,18 @@
         color: white;
         font-size: 15px;
         font-weight: bold;
+    }
+
+    .submit-form:hover {
+        background-color: #009887;
+        transition: all .3s ease;
+    }
+
+    @media(min-width: 850px) {
+        .form h2 {
+            margin-left: auto;
+            margin-top: 5%;
+        }
     }
 
 
