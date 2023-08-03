@@ -1,3 +1,11 @@
+:root {
+    --font_primary:white;
+    --font_secondary: #01ace8;
+    --font_third: #02b0f5;
+    --italic-font: #c4c4c4;
+    --background_service:#c9c8c8;
+}
+
 body {
     position: relative;
     padding: 0;
