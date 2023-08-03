@@ -1,6 +1,6 @@
 <script lang="ts">
     function scrollToBottom() {
-        const element = document.getElementById('form');
+        const element = document.getElementById('contact');
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
@@ -43,7 +43,7 @@
         justify-content: left;
         text-align: left;
         color: var(--font_primary);
-        margin-left: 3%;
+        margin-left: 15%;
         margin-top: 3%;
     }
 
@@ -122,12 +122,12 @@
 
 
 
-    @media(min-width: 1080px) {
+    @media(min-width: 850px) {
 
         .enter-messages {
             display: flex;
             justify-content: center;
-            margin: 15% auto;
+            margin: 5% auto;
             width: 60%;
         }
 
