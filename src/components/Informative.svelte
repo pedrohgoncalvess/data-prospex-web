@@ -65,6 +65,7 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
     .data-information {
         display: flex;
         flex-direction: column;
+        margin-bottom: 5%;
     }
 
     .informative-text {
@@ -121,15 +122,7 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
 
     .image-container {
         display: none;
-        /*margin-left: 5%;*/
-        /*margin-right: 5%;*/
     }
-
-    /*.informative-image {*/
-    /*    width: 300px;*/
-    /*}*/
-
-
 
     /*data prospex*/
 
@@ -153,9 +146,32 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
         font-size: 18px;
     }
 
-    .informative-text h2{
-        text-align: center;
-        margin:5% 0 0 0;
+    @media(min-width: 850px) {
+
+        .data-information {
+            margin-top: 0;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .informative-image {
+            width: 200px;
+            max-height: 300px;
+            margin: auto;
+        }
+
+        .data-driven {
+            margin-top: 10%;
+        }
+
+        .data-prospex {
+            margin-top: 10%;
+        }
     }
 
 </style>
