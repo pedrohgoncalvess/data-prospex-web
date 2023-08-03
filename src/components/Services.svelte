@@ -73,7 +73,7 @@
 
     .title-services {
         justify-content: space-around;
-        margin-left: 10%;
+        margin: 3% 5% 3% 10%;
         color: #f6f6f6;
         font-size: 20px;
     }
@@ -82,7 +82,7 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        margin: 5%;
+        margin: 5% 10% 3% 10%;
     }
 
     .principal-service {
@@ -90,8 +90,8 @@
         background-color: #c9c8c8;
         opacity: 0.6;
         border-radius: 10px;
-        margin: 5% auto;
-        width: 85%;
+        margin: 4% auto;
+        width: 70%;
     }
 
     .principal-service:hover {
@@ -100,7 +100,7 @@
         transition: 0.8s;
     }
 
-
+    /*====================*/
 
     .sub-title-services  {
         padding-top: 8%;
@@ -109,7 +109,7 @@
 
     .title-other-services {
         justify-content: space-around;
-        margin: 3% 0 0 10%;
+        margin: 7% 0 0 10%;
         color: #f6f6f6;
         font-size: 20px;
     }
@@ -118,7 +118,7 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        margin: 5%;
+        margin: 0 10%;
     }
 
 
@@ -127,14 +127,55 @@
         background-color: #c9c8c8;
         opacity: 0.6;
         border-radius: 10px;
-        margin: 5% auto;
-        width: 85%;
+        margin: 4% auto;
+        width: 70%;
     }
 
     .secondary-service:hover {
         opacity: 1;
         transform: scale(1.1);
         transition: 0.8s;
+    }
+
+    @media(min-width: 850px) {
+
+        .services-container {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        .information-services {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 5%;
+            margin-top: 0;
+        }
+
+        .principal-service {
+            flex:1;
+            text-align: center;
+            align-items: center;
+            background-color: #c9c8c8;
+            opacity: 0.6;
+            border-radius: 10px;
+        }
+
+        .information-other-services {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 5%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .secondary-service {
+            flex:1;
+            text-align: center;
+            align-items: center;
+            background-color: #c9c8c8;
+            opacity: 0.6;
+            border-radius: 10px;
+        }
     }
 
 </style>
