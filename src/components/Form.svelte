@@ -1,13 +1,22 @@
 <script lang="ts">
     import PhoneNumber from "./PhoneNumber.svelte";
+    import MaskInput from "svelte-input-mask";
 
     let name:string = '';
-    let phoneNumber;
     let email:string = '';
     let segment:string = '';
     let message:string = '';
+    let phoneNumber:string = ''
 
-    function toTheSubmit() {
+    let mask = "(00) 0 0000-0000";
+
+    const maskInput = ({ detail }) => {
+        phoneNumber = detail.inputState.maskedValue;
+    }
+
+
+    function toTheSubmit(event) {
+        console.log(event.data)
         console.log(name)
         console.log(email)
         console.log(phoneNumber)
@@ -20,12 +29,12 @@
 <div class="form">
     <h2>Esclareça suas dúvidas e nos conte suas ideias!</h2>
 
-    <form on:submit|preventDefault={toTheSubmit} class="inputs">
+    <form class="inputs" on:submit|preventDefault={toTheSubmit}>
         <label>Nome<span class="required">*</span></label>
-        <input type="text" bind:value={name} placeholder="Como devemos chamar você?" class="name-field" required>
+        <input type="text" bind:value={name}  placeholder="Como devemos chamar você?" class="name-field" required>
 
         <label>Telefone<span class="required">*</span></label>
-        <PhoneNumber bind:value={phoneNumber} class="number-field"/>
+        <MaskInput class="number-field" on:change={maskInput} alwaysShowMask maskChar="*" {mask} required />
 
         <label>E-mail<span class="required">*</span></label>
         <input type="email" bind:value={email} placeholder="example@email.com" class="email-field" required>
@@ -36,7 +45,7 @@
         <label>Fale sobre seu problema e/ou ideia</label>
         <textarea rows="3" cols="33" bind:value={message} class="message-input" placeholder="Descreva um problema/ideia ou cite alguma solução que trabalhamos."></textarea>
 
-        <button id="contact" type="submit" class="submit-form">Entrar em contato</button>
+        <button id="contact" class="submit-form">Entrar em contato</button>
     </form>
 </div>
 <style>
