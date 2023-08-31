@@ -1,20 +1,27 @@
 <script lang="ts">
+
+    import Typewriter from "svelte-typewriter";
+
     function scrollToBottom() {
         const element = document.getElementById('contact');
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
     }
+
 </script>
 
     <div class="enter-messages">
 
         <section class="welcome-message">
             <h2>
-                Bem vindo a <b>Data ProspeX</b>.
-                <br>
-                Resolvemos problemas com dados.
+                Bem vindo a <span class="azurite-tech">Azurite Tech</span>.
             </h2>
+            <Typewriter mode="loop" interval={[50, 60, 80]}>
+                <p>Tecnologia não precisa ser cara.</p>
+                <p>Tecnologia não precisa ser complicada.</p>
+                <p>Tecnologia resolve problemas.</p>
+            </Typewriter>
         </section>
 
         <section class="buttons-redirect">
@@ -29,6 +36,10 @@
 
 <style>
 
+    .azurite-tech {
+        color: var(--font_secondary);
+        font-size: 40px;
+    }
 
     .enter-messages {
         display: flex;
@@ -38,6 +49,7 @@
         color: var(--font_primary);
         margin-left: 10%;
         margin-top: 3%;
+        font-size: 20px;
     }
 
 
