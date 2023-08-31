@@ -45,7 +45,7 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
         </div>
     </div>
 </div>
-<div class="data-prospex">
+<div class="azurite-tech">
     <div>
         <div class="informative-text">
             <h1>
@@ -126,7 +126,7 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
 
     /*data prospex*/
 
-    .data-prospex {
+    .azurite-tech {
         display: flex;
         justify-content: center;
         margin: 2% auto;
@@ -134,11 +134,11 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
         width: 80%;
     }
 
-    .data-prospex p {
+    .azurite-tech p {
         margin-top: 0;
     }
 
-    .data-prospex h1 {
+    .azurite-tech h1 {
         font-size: 25px;
     }
 
@@ -169,7 +169,7 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
             margin-top: 10%;
         }
 
-        .data-prospex {
+        .azurite-tech {
             margin-top: 10%;
         }
     }
