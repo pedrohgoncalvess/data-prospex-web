@@ -92,6 +92,8 @@
         border-radius: 10px;
         margin: 4% auto;
         width: 70%;
+        max-width: 370px;
+        max-height: 290px;
     }
 
     .principal-service:hover {
@@ -129,6 +131,8 @@
         border-radius: 10px;
         margin: 4% auto;
         width: 70%;
+        max-width: 370px;
+        max-height: 290px;
     }
 
     .secondary-service:hover {
@@ -142,6 +146,7 @@
         .services-container {
             display: flex;
             flex-flow: column wrap;
+            margin-top: 7%;
         }
 
         .information-services {
@@ -176,6 +181,39 @@
             opacity: 0.6;
             border-radius: 10px;
         }
+    }
+
+    @media(min-width: 1650px) {
+
+        .services-container {
+            display: flex;
+            flex-flow: column wrap;
+            margin-top: 0;
+        }
+
+        .information-services {
+            margin:0;
+            padding: 0;
+            gap: 5%;
+        }
+
+        .principal-service {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .information-other-services {
+            margin:0;
+            padding: 0;
+            gap: 5%;
+        }
+
+        .secondary-service {
+            margin: 0;
+            padding: 0;
+        }
+
     }
 
 </style>
