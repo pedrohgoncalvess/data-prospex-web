@@ -17,10 +17,10 @@
             <h2>
                 Bem vindo a <span class="azurite-tech">Azurite Tech</span>.
             </h2>
-            <Typewriter mode="loop" interval={[50, 60, 80]}>
-                <p>Tecnologia não precisa ser cara.</p>
-                <p>Tecnologia não precisa ser complicada.</p>
-                <p>Tecnologia resolve problemas.</p>
+            <Typewriter mode="loop"  interval={[50, 60, 80]}>
+                <p class="typewriter-phrases">Tecnologia não precisa <b class="text-focus-neg">custar tanto.</b></p>
+                <p class="typewriter-phrases">Tecnologia não precisa ser <b class="text-focus-neg">complicada.</b></p>
+                <p class="typewriter-phrases">Tecnologia pode <b class="text-focus-pos">transformar</b>negócios.</p>
             </Typewriter>
         </section>
 
@@ -35,6 +35,24 @@
     </div>
 
 <style>
+
+    .typewriter-phrases {
+        font-family: "Fira Code";
+        font-size: 22px;
+    }
+
+    .text-focus-neg {
+        color: var(--negative_color);
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-focus-pos {
+        color:var(--font_secondary);
+        margin:0;
+        padding: 0;
+    }
+
 
     .azurite-tech {
         color: var(--font_secondary);
@@ -136,6 +154,12 @@
             width: 60%;
         }
 
+    }
+
+    @media(min-width: 1650px) {
+        .enter-messages {
+            margin: 2% auto 1% auto;
+        }
     }
 
 
