@@ -45,14 +45,14 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
         </div>
     </div>
 </div>
-<div class="azurite-tech">
+<div class="azurite-tech-class">
     <div>
         <div class="informative-text">
             <h1>
-                Quais problemas a <b>Data ProspeX</b> pode me ajudar a resolver?
+                Quais problemas a <span class="azurite-tech">Azurite</span> pode me ajudar a resolver?
             </h1>
             <p>
-                A Data ProspeX trabalha desenvolvendo soluções em todo escopo de dados. Desde a produção do dado bruto, até a coleta, limpeza, armazenamento, analíse e até criação de modelos de inteligência artificial para atacar problemas mais complexos.
+                A Azurite tech trabalha desenvolvendo soluções em todo escopo de dados. Desde a produção do dado bruto, até a coleta, limpeza, armazenamento, analíse e até criação de modelos de inteligência artificial para atacar problemas mais complexos.
             <p>
                 Seja seu problema com falta de software para desempenhar melhor sua operação, perca de tempo com tarefas repetitivas, elaboração de relatórios ou analise de dados, nós podemos ti auxiliar.
             </p>
@@ -126,7 +126,7 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
 
     /*data prospex*/
 
-    .azurite-tech {
+    .azurite-tech-class {
         display: flex;
         justify-content: center;
         margin: 2% auto;
@@ -134,16 +134,21 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
         width: 80%;
     }
 
-    .azurite-tech p {
+    .azurite-tech-class p {
         margin-top: 0;
     }
 
-    .azurite-tech h1 {
+    .azurite-tech-class h1 {
         font-size: 25px;
     }
 
     .informative-text p{
         font-size: 18px;
+    }
+
+    .azurite-tech {
+        font-size: 30px;
+        color: var(--font_secondary);
     }
 
     @media(min-width: 850px) {
@@ -169,7 +174,7 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
             margin-top: 10%;
         }
 
-        .azurite-tech {
+        .azurite-tech-class {
             margin-top: 10%;
         }
     }
