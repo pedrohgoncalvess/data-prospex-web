@@ -178,5 +178,4 @@ import DashboardAnalytics from "$lib/images/informative/data-analysis.png"
             margin-top: 10%;
         }
     }
-
 </style>
