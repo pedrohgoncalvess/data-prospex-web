@@ -17,7 +17,7 @@
             <h2>
                 Bem vindo a <span class="azurite-tech">Azurite Tech</span>.
             </h2>
-            <Typewriter mode="loop"  interval={[50, 60, 80]}>
+            <Typewriter mode="loop"  interval={[80, 80, 80]}>
                 <p class="typewriter-phrases">Tecnologia não precisa <b class="text-focus-neg">custar tanto.</b></p>
                 <p class="typewriter-phrases">Tecnologia não precisa ser <b class="text-focus-neg">complicada.</b></p>
                 <p class="typewriter-phrases">Tecnologia pode <b class="text-focus-pos">transformar</b>negócios.</p>
@@ -75,6 +75,7 @@
         display: flex;
         font-size: 85%;
         align-items: center;
+        margin-top: 5%;
         gap: 10%;
 
     }
